@@ -2,9 +2,13 @@ import React from "react";
 
 function NavBar() {
   return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
+    <div>
+       <nav>
+         <a href="#home">I'm a link!</a>
+       </nav>
+       <Home />
+       <About />
+    </div>
   );
 }
 
@@ -17,6 +21,13 @@ function Home() {
 }
 
 {/* write an <About> component here */}
+function About() {
+  return (
+    <div id="about">
+      <h1>About</h1>
+    </div>
+  )
+}
 
 
 function App() {
